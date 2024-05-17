@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <div class="navi">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">My skills</a></li>
+                    <li><a href="#">Contect Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My name is <span class="purple">Phoenix</span>
+                <div>and i am passionate</div>            
+                <span id="element"></span>
+                <div class="hire">
+              
+                  <button>Hire me!</button>
+                </div>
+                
+            </div>
+            <div class="rightsection">
+                <img src="asset/PngItem_1127587.png" alt="">
+            </div>
+        </section>
+        
+        <section class="about" id="about">
+            <div class="us">
+              <div class="my"><span>About Me</span></div>
+              <div class="about-details">
+                <div class="left">
+                  <img src="asset/ab-img.png" alt="" />
+                </div>
+                <div class="right">
+                  <div class="topic">I am a web developer..</div>
+                  <p>
+                    Welcome to <span class="purple">Phoenix's</span> corner of the web! I'm passionate about crafting seamless digital experiences that blend creativity with functionality. With a keen eye for design and a knack for problem-solving, I specialize in bringing ideas to life through innovative web development.
+                    My journey in the world of web development began [insert brief personal/professional background]. Over the years, I've honed my skills in various programming languages, including HTML5, CSS3, JavaScript, and more. Whether it's building responsive websites, developing interactive web applications, or optimizing for performance and user experience, I thrive on the challenges of modern web development.
+                    What sets me apart is my commitment to understanding the unique needs of each project and delivering tailored solutions that exceed expectations. From brainstorming concepts to implementing cutting-edge technologies.
+                    Let's innovate, let's create, let's build the web of tomorrow, today.
+                  </p>
+                  <div class="button">
+                    <button>Resume</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <br>
+          <br>
+          <br>
+          
+          <section class="skills" id="skills">
+            <div class="us">
+              <div class="my"><span>My Skills</span></div>
+                <section class="skills">
+                  <div class="cards">
+                      <div class="skill-card">
+                          <img src="asset/html.svg" alt="">
+                          <h2>HTML</h2>
+                      </div>
+                      <div class="skill-card">
+                          <img src="asset/css.svg" alt="">
+                          <h2>CSS</h2>
+                      </div>
+                      <div class="skill-card">
+                          <img src="asset/js.svg" alt="">
+                          <h2>JavaScript</h2>
+                      </div>
+                      <div class="skill-card">
+                          <img src="asset/tailwind-css-icon.svg" alt="">
+                          <h2>Tailwind</h2>
+                      </div>
+                      <div class="skill-card">
+                          <img src="asset/figma-icon.svg" alt="">
+                          <h2>Figma
+                          </h2>
+                      </div>
+                      <div class="skill-card">
+                        <img src="asset/react-js-icon.svg" alt="">
+                        <h2>React JS</h2>
+                    </div>
+                    
+                  </div>
+              </section>
+              </div>
+            </div>
+          </section>
+          <br>
+
+          <section class="about" id="about">
+            <div class="us">
+              <div class="my"><span>Contect me</span></div>
+              <div class="about-details">
+                <div class="left">
+                  <img src="asset/PngItem_1127689.png" alt="" />
+                </div>
+                <div class="right"> 
+                  <form class="form">
+                    <div class="title">Get in Touch</div>
+                    <input type="text" placeholder="Your email" class="input">
+                    <textarea placeholder="Your message"></textarea>   
+                    <button>Submit</button>
+                </form>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+    <footer id="footer">
+      <h2>&copy; all rights reserved</h2>
+  </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer..', 'UI/UX Designer..','Editor..','Student..'],
+          typeSpeed: 120,
+        });
+      </script>
+      <script src="custom-scripts.js"></script>
+      <script src="map-init.js"></script>
+</body>
+</html>

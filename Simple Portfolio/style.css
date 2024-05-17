@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+body{
+    background-color:rgb(18, 21, 41);
+}
+nav{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    background-color:rgb(48, 39, 95);
+    height: 60px;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000; 
+    border-radius: 7px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li
+{
+    list-style: none;
+    margin: 0;
+    margin: 0 25px;
+    height: 50;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white
+
+}
+
+nav ul li a:j{
+    text-decoration: none;
+    color:white
+}
+.logo
+{
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
+    color: aliceblue;
+    
+}
+.firstsection > div{
+   width: 30%;
+}
+.leftsection{
+
+   width: 50%; 
+   font-size: 3rem;
+   margin: 200px 0;
+}
+.rightsection{
+    width: 50%; 
+    margin-top:100px;
+}
+.rightsection img{
+    width: 80%;
+    margin:  50px 0;
+}
+.purple{
+ color: blueviolet;
+}
+
+.leftsection.btn{
+  padding: 12px;
+  margin: 100%;
+
+}
+
+section .hire{
+  margin: 16px 0;
+}
+section .hire button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 400;
+  background-color:rgb(48, 39, 95);
+  color: #ffffff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .hire button:hover{
+  border-color: #0f131f;
+  background-color: #5e4794;
+  color: #ffffff;
+}
+/*about--------*/
+
+section .us{
+    width: 70%;
+    margin: 35px auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:100px;
+  }
+  section .my{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  section .my span{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  section .my span::before,
+  section .my span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ffffff;
+    left: 0;
+    bottom: 0;
+  }
+  section .my span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about .about-details .left{
+    width: 45%;
+  }
+  .about .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .about-details .right{
+    width: 55%;
+  }
+  section  .topic{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .about-details .right p{
+    text-align: justify;
+    color: #ffffff;
+  }
+  section .button{
+    margin: 16px 0;
+  }
+  section .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    background-color:rgb(48, 39, 95);
+    color: #ffffff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  section .button button:hover{
+    border-color: #0f131f;
+  background-color: #5e4794;
+  color: #ffffff;
+  }
+
+/* responsive*/
+@media (max-width: 1190px) {
+  section .us{
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 22px);
+  }
+}
+@media (max-width: 900px) {
+  .about .left img{
+    height: 300px;
+    width: 300px;
+  }
+}
+
+/* skills section styling */
+skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+.cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:200px;
+  gap: 2.5vh;
+  align-items: center;
+}
+
+.skill-card {
+  height: 12vw;
+  width: 10vw;
+  background-color: #05050569;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+  transition: all ease 0.8s;
+}
+
+.skill-card:hover {
+  background-color:rgb(48, 39, 95);
+}
+
+.skill-card img {
+  height: 5vw;
+  width: 5vw;
+  object-fit: contain;
+}
+
+.skill-card h2 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #fbfbfb;
+}
+
+/*contact me--*/
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 700px;
+  background-color:rgb(18, 21, 41);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 50px 30px -30px rgba(248, 247, 253, 0.315);
+}
+
+.form .title {
+  color: rgb(218, 212, 212);
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(167, 160, 160);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 90%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 90%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  align-self: center;
+  padding: 20px;
+  width: 200px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color:rgb(48, 39, 95);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+    
+ .form button:hover{
+  border-color: #0f131f;
+  background-color: #5e4794;
+  color: #ffffff;
+}
+
+@media (max-width: 1190px) {
+  section .form{
+    width: 85%;
+  }
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  background-color:rgb(48, 39, 95);
+  
+}
